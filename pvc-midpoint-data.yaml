@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: midpoint-data-midpoint-repository-0
+  namespace: midpoint-deployment
+spec:
+  volumeName: pv-midpoint-data
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
